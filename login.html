@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,intial-sacle=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+
+    </head>
+    <body>
+
+                <div class="wrapper " style="height:500px;">
+                
+                <div class="form-box">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                    <form action="login_succ" method="POST" name="formfill">
+                    <h2 >Login</h2>
+                    <div class="form-control input-box" style="margin-top:10px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" id="uname" required>
+			<span id="nameerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email1" placeholder="emaill"  id="email" required >
+			<span id="emailerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" id="pass" required name="pass1">
+			<span id="passerr" class="error" style="color:red; margin-left:50px;"></span>
+                    </div>
+                   
+                   
+                    
+                        <button type="submit" >Login</button>
+	    	<p class="lo"> Don't you have an account? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <a href="register.html"">register</a>
+                        </p>
+                    </form>
+                
+               </div>
+            </div>
+            </div>
+            </div>
+
+    </body>
+</html>

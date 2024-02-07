@@ -1,0 +1,215 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 19, 2023, 1:14:52 AM
+    Author     : iiit
+*/
+*{
+    margin: 0;
+    margin-left:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.hero{
+    width: 100%;
+    height:60vh;
+    /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+    position:relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+nav{
+    width: 100%;
+    position:absolute;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left:-10px;
+   
+  
+}
+nav .logo h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    gap:10px;
+    color:blue;
+    margin-top:-280px;
+    
+}
+nav .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+nav .logo img{
+    width: 70px;
+    border-radius: 80%;
+    height: 50px;
+     margin-top:-280px;
+}
+nav .links{
+    display: flex;
+    list-style: none;
+    gap:58px;
+    color:red;
+    margin-left:150px;
+    margin-top: 30px;
+     margin-top:-260px;
+}
+.hero .nav-link:hover{
+    color:green;
+}
+ .nav-link{
+    font-size: 0.9375rem;
+   
+    font-size: large;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.back-video{
+    position: absolute;
+    width: 217vh;
+    z-index: -1;
+    
+}
+.login-btn{
+    width: 150px;
+    height:30px;
+    margin-top:-10px;
+}
+
+h1{
+  
+  align-items: center;
+justify-content: center;  
+}
+
+.home{
+    border-color: blue;
+    margin-top: 200px;
+    border-radius:50px;
+    color:black;
+}
+.education-section{
+  background:black;
+}
+.education-section .card,
+.about-section .card img{
+  border-radius: 0.625rem;
+}
+.education-section .text-sec{
+  padding-left:2rem;
+}
+.education{
+  padding-top:3.25rem;
+}
+.education ul li{
+  font-size: 1rem;
+  color:white;
+  line-height: 32px;
+  position:relative;
+  margin-left:30px;
+}
+.education ul li::before{
+  position:absolute;
+  left:-2.1875rem;
+  color:white;
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content:'\f00c';
+  display:inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  margin-left: 100px;
+  background-color: green;
+  border: 0.1875rem solid yellow;
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.footer{
+  background-color: black;
+} 
+.footer .footer-social a i{
+  font-size: 1.5rem;
+  color:white;
+  padding:0 1rem;
+}
+.footer .footer-social a:hover i{
+  color:yellow;
+}
+.testimonial-section{
+  background-color: green;
+}
+.testimonial-section h2{
+  color:white ;
+}
+.testimonial-section .carousel-item{
+  margin-top:3rem;
+  padding:10rem 3.125rem;
+  background-color:black;
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+.wrapper {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+.testimonial-section .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding:0.3125rem;
+}
+.testimonial-section .carousel-caption p{
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  color:white;
+  padding:0 11% 0.625rem;
+}
+.testimonial-section .carousel-indicators{
+  bottom:-2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+  width:15px;
+  height:15px;
+  outline:none;
+  border-radius: 50%;
+  border: none;
+  margin-right:1rem;
+  opacity:0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+  opacity:1;
+}

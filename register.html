@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,intial-sacle=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+
+    </head>
+    <body>
+
+                <div class="wrapper " style="height:500px;">
+                
+                <div class="form-box">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                    <form action="register_succ"  method="POST" name="formfill">
+                    <h2 >Register</h2>
+                    <div class="form-control input-box" style="margin-top:10px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  placeholder="Username" id="uname" name="uname">
+			<span id="nameerr" class="error" style="color:white; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" n placeholder="emaill" name="email"  id="email" >
+			<span id="emailerr" class="error" style="color:white; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" name="pass" id="pass">
+			<span id="passerr" class="error" style="color:white; margin-left:50px;"></span>
+                    </div>
+                    <div class="form-control input-box" style="margin-top:-50px;">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="cpassword" placeholder="Confirm Password" id="cpass">
+		<span id="cpasserr" class="error" style="color:white; margin-left:50px;"></span>
+
+                    </div>
+                   
+                    
+                        <button type="submit" >Register</button>
+	    	<p class="lo"> Do you have an account? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <a href="login.html">login</a>
+                        </p>
+                    </form>
+                
+               </div>
+            </div>
+            </div>
+            </div>
+            
+    </body>
+    <script>
+
+	var form=document.querySelector('form');
+    form.addEventListener("submit",(e)=>{
+
+    	if(!validate()){
+		e.preventDefault();	
+	}
+         });
+
+    function validate(){
+	
+	    var name=document.getElementById('uname').value;
+	    var email=document.getElementById("email").value;
+	    var pass=document.getElementById('pass').value;
+	    var cpass=document.getElementById('cpass').value;
+		var nameerr=document.getElementById('nameerr');
+		var emailerr=document.getElementById('emailerr');
+		var passerr=document.getElementById('passerr');
+		var cpasserr=document.getElementById('cpasserr');
+
+
+		var isname=false;
+		var isemail=false;
+		var ispass=false;
+		var iscpass=false;
+		var isvalid=false;
+
+
+    var namechk=/^([a-z A-Z]{3,30})$/;
+    var emailchk=/^([a-z A-Z 0-9 \. _]+)@([a-z]{3,10})(.[a-z]{1,6})$/;
+    var passchk=/^[a-zA-Z]{2,10}[@#][0-9]{2,15}$/;
+
+
+
+    if(name==""){
+        
+        nameerr.innerHTML="Enter the name";
+    }
+    else if(!namechk.test(name)){
+        nameerr.innerHTML="enter the valid name";
+
+    }
+	else{
+nameerr.innerHTML="";
+		isname=true;
+	}
+
+	if(email==""){
+	emailerr.innerHTML="Enter the email";
+	}
+    else if(!emailchk.test(email)){
+        emailerr.innerHTML="Enter the name";
+    }			
+	else{
+		isemail-=true;
+		emailerr.innerHTML="";
+	}
+
+	
+
+	var check8=passchk.test(pass);
+	if(pass==""){
+		passerr.innerHTML="password required";
+	}	
+	else if(check8 !=true){
+		passerr.innerHTML="password must contain the special characters";
+	}
+	else{
+		ispass-=true;
+		passerr.innerHTML="";
+	}		
+	if(cpass==""){
+		cpasserr.innerHTML="password required";
+	}
+	else if(pass!=cpass){
+		cpasserr.innerHTML="password not matched";
+	}
+	else{
+		iscpass-=true;
+		cpasserr.innerHTML="";
+	}
+
+	if(isname && isemail && ispass && iscpass){
+		isvalid=true;
+	}
+	return isvalid;
+
+
+
+        }
+
+
+    </script>
+</html>

@@ -1,0 +1,583 @@
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+<style>
+	.col-4{
+		font-family:serif;
+		background-color:pink;
+	}
+	.body{
+		background-image:url("schools.jpeg");
+		background-size: cover;
+	}
+	.row{
+		padding:40px;
+	}
+	.v{
+		text-align:center;
+		font-weight:bold;
+		font-family:Robotic;
+		color:white;
+	}
+	
+	.card-text{
+		text-align:center;
+		
+	}
+	.school{
+		margin-left:590px;
+		border: 10px;
+		background-color: gray;
+		border-color: black;
+		color: white;
+		margin-right:460px;
+		
+	}
+        .main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  margin-left: 100px;
+  background-color: green;
+  border: 0.1875rem solid yellow;
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+	
+</style>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: yellow;margin-left: 50px; margin-right: 50px; margin-top: 10px; border-color: rgb(72, 243, 29); border-radius: 1000px;">
+	<div class="container-fluid"><br>
+	  <a class="navbar-brand" href="#" style="color: rgb(243, 14, 14);">Madanapalli schools</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" style="background-color: black;"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#home" style ="margin-left: 200px;">Home</a>
+		  </li>
+		 
+		  <li class="nav-item dropdown" style="margin-left: 100px;">
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Schools
+			</a>
+			<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#nar" > Narayana school</a></li>
+					<li><a class="dropdown-item" href="#nlf">NLF School</S></a></li>
+					<li><a class="dropdown-item" href="#kesava">Kesavareddy school</a></li>
+					<li><a class="dropdown-item" href="#vasista">Vasista school</a></li>
+					<li><a class="dropdown-item" href="#vmhs">Vivekananda municipal high school</a></li>
+					
+					<li><a class="dropdown-item" href="#zphs">ZPHS municipal high school</a></li>
+
+			</ul>
+		  </li>
+		  <li class="nav-item dropdown" style="margin-left: 100px;">
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Colleges
+			</a>
+			<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#mits">MITS College</a></li>
+					<li><a class="dropdown-item" href="#golden">Golden Valley</S></a></li>
+					<li><a class="dropdown-item" href="#viswam">Viswam college</a></li>
+					<li><a class="dropdown-item" href="#bt">BT degree College</a></li>
+			</ul>
+		  </li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </nav><br>
+  <section id="home">
+		<div style="background: url('school.jpg'); height: 500px; background-size: cover;">
+			<br><br><br><br><br><br><br><br>
+			<p style="margin-left: 300px; font-size:30px;"><b>A School is a both Educational and Building designed to provide
+				learning environment for the teaching of students under the direction of the Teachers.</p> 
+<button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 50px; margin-top:10px; width:900px; margin-left: 250px;">
+	Register for Schools...
+  </button>
+  
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content" style="background-color: aqua; ">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin-left: 200px;">Register</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" >
+                    <form action="education">
+                    <input type="text" name="stu_name" placeholder="Enter the student name" style="margin-left: 60px;" required>
+			
+				<br><br>
+                                <input type="text" name="stu_father" placeholder="Enter your fathername" style="margin-left: 60px;" required><br><br>
+                                <input type="email" name="stu_email" placeholder="Enter your email" style="margin-left: 60px;" required>
+				<br><br>
+                                <label style="margin-left: 60px;"><b>Date of birth:</b></label><input type="date" name="stu_dob" placeholder="Enter your date of birth" required><br><br>
+				<input type="number" name="stu_class" placeholder="Enter your standard" style="margin-left: 60px;" required><br><br>
+				
+                                <select name='stu_school' style="margin-left:100px;" required>
+                                    <option value="Narayana_school" selected="" >Narayana school</option>
+                                         <option value="New_little_flower" >Nlf school</option>
+                                          <option value="kesava_reddy_school" >Kesava reddy school</option>
+                                           <option value="Vaisista_school" >vasista school</option>
+                                        
+                                    </select>
+                                <br>
+				  <br>
+				<label style="margin-left: 60px;"><b>Submit proof of student:</b></label><input type="file" name="stu_proof" placeholder="SUbmit proof" style="margin-left: 60px;">
+                                <br><br>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-left:100px;">Close</button>
+                                <button type="submit" class="btn btn-primary" style="margin-left:100px;">SUBMIT</button>
+			 </form>
+		</div>
+              
+	
+	  </div>
+	</div>
+  </div>
+ 
+  <br><br>
+  <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#exampleModalL" style="height: 50px; margin-top:10px; width:900px; margin-left: 250px;">
+	Register for Colleges...
+  </button>
+  
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModalL" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content" style="background-color: aqua; ">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin-left: 200px;">Register</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" >
+                    <form action="colleges">
+                    <input type="text" name="stu_name" placeholder="Enter the student name" style="margin-left: 60px;" required>
+			
+				<br><br>
+                                <input type="text" name="stu_father" placeholder="Enter your fathername" style="margin-left: 60px;" required><br><br>
+                                <input type="email" name="stu_email" placeholder="Enter your email" style="margin-left: 60px;" required>
+				<br><br>
+                                <label style="margin-left: 60px;"><b>Date of birth:</b></label><input type="date" name="stu_dob" placeholder="Enter your date of birth" required><br><br>
+				<input type="text" name="stu_class" placeholder="Enter your branch or year" style="margin-left: 60px;" required><br><br>
+				
+                                <select name='stu_college' style="margin-left:100px;" required>
+                                    <option value=MIts_college " selected>MITS_college</option>
+                                         <option value="Golden_valley" >Golden valley</option>
+                                          <option value="Viswam_college" >Viswam college</option>
+                                         
+                                        
+                                    </select>
+                                <br>
+				  <br>
+				<label style="margin-left: 60px;"><b>Submit SSC hall ticket proof of student:</b></label><input type="file" name="stu_proof" placeholder="SUbmit proof" style="margin-left: 60px;">
+                                <br><br>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-left:100px;">Close</button>
+                                <button type="submit" class="btn btn-primary" style="margin-left:100px;">SUBMIT</button>
+			 </form>
+		</div>
+              
+	
+	  </div>
+	</div>
+  </div>
+
+  
+  </section>
+  <br><br>
+  <!-- Button trigger modal -->
+
+  	<div>
+		<h1 class="school">SCHOOLS</h1>
+	</div>
+	<br>
+
+<!--marayana-->
+<section id="nar">
+
+	<h1 class="v">NARAYANA SCHOOL</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="narayana.jpg" class="d-block w-100" alt="...">
+    </div>
+		<div class="carousel-item">
+		  <img src="narayana1.jpg" class="d-block w-100" alt="...">
+		</div>
+   
+   
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			Narayana  schools, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on Prashanth Nagar , Madanaplle
+in a place of peace tranquality surronded by beautiful hilllocks.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>:SBI Colony,EXtension-1, Madanaplle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-regular"></i>
+        </div>
+</div>
+    <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://narayana-em-schoolmadanapalle.business.site/" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<br><br>
+<!--NLF-->
+<section id="nlf">
+
+	<h1 class="v">NEW LITTLE FLOWER HIGH SCHOOL</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="nlf1.jpeg" class="d-block w-100" alt="...">
+    </div>
+   
+    <div class="carousel-item">
+      <img src="nlf1.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			New Little Flower school, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on SBI  Colony,2 kms away fromRTC Bustand, Madanaplle
+in a place of peace tranquality surronded by beautiful hilllocks and awe inspiring Basinikonda as its western back-drop.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>:SBI Colony,EXtension-1, Madanaplle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
+        </div>
+		
+</div>
+    <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://narayana-em-schoolmadanapalle.business.site/" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<!--kesava-->
+<section id="kesava">
+
+	<h1 class="v">KESAVAREDDY SCHOOLS</h1>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-8">
+			<div id="carouselExample" class="carousel slide">
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="kesava1.jpg" class="d-block w-100" alt="...">
+		</div>
+	   
+		<div class="carousel-item">
+		  <img src="kesava.jpg" class="d-block w-100" alt="...">
+		</div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+			</div>
+			<div class="col-4">
+				KesavaReddy  schools, offers the educational oppurtunities with the universal values
+	that prepare students for life,work and civic roles in theglobal village.Situated on Nimmanapalli Road , Madanaplle
+	in a place of peace tranquality surronded by beautiful hilllocks and awe inspiring Basinikonda as its western back-drop.<br><br>
+			LOCATION  <br><i class="fa-solid fa-location-dot"></i>:SBI Colony,EXtension-1, Madanaplle.<br><br>
+			TIMINGS:-8:00 am to 5:00 pm.<br><br>
+			RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
+			</div>
+	</div>
+	
+            <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://www.justdial.com/Madanapalle/Keshava-Reddy-School-Basinikonda/9999P8571-8571-180208175541-G3C1_BZDET" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<!--vasista-->
+<section id="vasista">
+
+	<h1 class="v">VASHISTA SCHOOLS,</h1><h3 class="v">I.C.S.E</h3>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="icse.jpg" class="d-block w-100" alt="...">
+    </div>
+   
+    <div class="carousel-item">
+      <img src="vashista2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			Vashistha school, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on Nimmanapalle road,4 kms away from Madanaplle
+in a place of peace tranquality surronded by beautiful hilllocks and awe inspiring Basinikonda as its western back-drop.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>:Nimmanapalle road,4 kms away from Madanaplle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+</div>
+	<button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://www.justdial.com/Madanapalle/Vasishta-Schools-Nimmanapalli-Road/9999P8571-8571-180810153506-J3C1_BZDET" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<!--zphs-->
+<section id="zphs">
+	<h1 class="v">ZILLA PARISHAT HIGH SCHOOL</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="zphs.jpg" class="d-block w-100" alt="...">
+    </div>
+   
+    
+	 <div class="carousel-item">
+      <img src="vmhs2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			ZPHS, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on Near RTC Bustand, Madanaplle
+in a place of peace tranquality surronded by beautiful families.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>: Near RTC Bustand, Madanaplle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+</div>
+
+</section>
+<!--vmhs-->
+<section id="vmhs">
+<h1 class="v">VIVEKANANDA MUNICIPAL HIGH SCHOOL</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="vmhs.jpeg" class="d-block w-100" alt="...">
+    </div>
+   
+    
+	 <div class="carousel-item">
+      <img src="vmhs2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			VMHS, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on Raja Nagar,Ng Palli, Madanaplle
+in a place of peace tranquality surronded by beautiful families.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>: Raja Nagar,Ng Palli, Madanaplle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+</div>
+
+    <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://www.justdial.com/Madanapalle/Vivekananda-Municipal-High-School-Neerugattupalle/9999P8571-8571-200929011427-Y6V5_BZDET" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<br>
+<div>
+	<h1 class="school">COLLEGES</h1>
+</div>
+
+ 
+<!--mits-->
+  <section id="mits">
+<h1 class="v">Madanapalle Institute Of Technology And Science</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="mits.jpg" class="d-block w-100" alt="...">
+    </div>
+   
+    
+	 <div class="carousel-item">
+      <img src="mits1.jpg" class="d-block w-100" alt="...">
+    </div>
+	 <div class="carousel-item">
+      <img src="mits2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			MITS, offers the educational oppurtunities with the universal values
+		that prepare students for life,work and civic roles in theglobal village.Situated on  Kadiri Road Angallu, Village, Madanapalle, 
+		in a place of peace tranquality surronded by beautiful families.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>: Kadiri Road Angallu, Village, Madanapalle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+</div>
+
+    <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://mits.ac.in/" style="color: black;">Learn more</a></button>
+</section>
+<br>
+<!--viswam-->
+<section id="viswam">
+	<h1 class="v">VISWAM COLLEGES</h1>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-8">
+			<div id="carouselExample" class="carousel slide">
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="viswam.jpg" class="d-block w-100" alt="...">
+		</div>
+	   
+		
+		 <div class="carousel-item">
+		  <img src="viswam1.jpg" class="d-block w-100" alt="...">
+		</div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+			</div>
+			<div class="col-4">
+				VISWAM, offers the educational oppurtunities with the universal values
+	that prepare students for life,work and civic roles in theglobal village.Situated on ANGALLU Road, Madanaplle.
+	in a place of peace tranquality surronded by beautiful families.<br><br>
+			LOCATION  <br><i class="fa-solid fa-location-dot"></i>: ANGALLU Road, Madanaplle.<br><br>
+			TIMINGS:-8:00 am to 5:00 pm.<br><br>
+			RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+			</div>
+	</div>
+
+            <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="http://viswamengg.in/" style="color: black;">Learn more</a></button>
+</section><br>
+
+  <!--bt-->
+  <section id="bt">
+	<h1 class="v">Besant Theosophical College</h1>
+<div class="container text-center">
+	<div class="row">
+	    <div class="col-8">
+		<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bt1.jpg" class="d-block w-100" alt="...">
+    </div>
+   
+    
+	 <div class="carousel-item">
+      <img src="bt2.jpg" class="d-block w-100" alt="...">
+    </div>
+	
+	 <div class="carousel-item">
+      <img src="bt3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	    </div>
+	    <div class="col-4">
+			BT College, offers the educational oppurtunities with the universal values
+that prepare students for life,work and civic roles in theglobal village.Situated on  Giri Rao Street, Bangalore Rd, Kumarapuram, Madanapalle.
+in a place of peace tranquality surronded by beautiful families.<br><br>
+		LOCATION  <br><i class="fa-solid fa-location-dot"></i>: Giri Rao Street, Bangalore Rd, Kumarapuram, Madanapalle.<br><br>
+		TIMINGS:-8:00 am to 5:00 pm.<br><br>
+		RATING :<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+</div>
+
+    <button style="background-color: rgb(55, 204, 204); color: black;" class="main-btn"><a href="https://collegedunia.com/college/554-besant-theosophical-college-madanapalle/courses-fees" style="color: black;">Learn more</a></button>
+  </section>
+  
+ 
+
+</body>
+</html>
